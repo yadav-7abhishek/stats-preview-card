@@ -1,0 +1,113 @@
+@media (min-width:1400px) {
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: hsl(244, 38%, 16%);
+  width: 700px;
+  position: relative;
+  top: 200px;
+  left: 350px;
+}
+
+.content {
+  margin: 2rem 4rem 0 2rem;
+  width: 23rem;
+}
+
+.details {
+  font-size: 0.8rem;
+  padding: 1rem 4rem 3rem 0;
+}
+
+.row {
+  padding: 0 0 2rem 0;
+}
+
+.below {
+  background-color: hsl(277, 64%, 61%);
+  width: 325px;
+}
+
+.office-image {
+  background: url("image-header-desktop.jpg");
+  opacity: 0.4;
+  height: 20rem;
+  background-size: 120%
+}
+
+.stats {
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+}
+
+h5 {
+  font-weight: bolder;
+  margin: 0;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0;
+}
+}
+
+@media (max-width : 380px) {
+  body{
+    width: 100%;
+  }
+  h2{
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+    height: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows :auto;
+    width: 325px;
+    height: auto;
+    position: relative;
+    left: 30px;
+    top: 0;
+    margin: 4rem 0;
+  }
+  .content {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    width: 325px;
+    margin-left: 1rem;
+  }
+  .details{
+    margin: 0;
+    padding: 1rem 3rem 1rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .row{
+    padding: 1rem 2rem 1rem 0 ;
+    text-align: center;
+  }
+  .review{
+    padding: 1rem 0;
+  }
+
+  .below{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+  }
+}
